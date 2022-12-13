@@ -1,0 +1,42 @@
+
+// Variables
+@import 'Fonts';
+@import 'Variable';
+@import 'Function';
+@import '../../public/bootstrap/css/bootstrap.min.css';
+
+html {
+    scroll-behavior: smooth;
+    direction: rtl;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    direction: rtl;
+    text-align: right;
+}
+
+body {
+    font-family: $font-family-IranSans;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(288.66deg, $third-color 0.94%, $primary-color 80.38%);
+    border-radius: 10px;
+}
+
+:root {
+    scrollbar-color: $primary-color #fff !important;
+    scrollbar-width: thin !important;
+}
+
+
