@@ -19,11 +19,6 @@ html {
     text-align: right;
 }
 
-body {
-    font-family: $font-family-IranSans;
-    font-size: $font-size;
-    line-height: $line-height;
-}
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -39,4 +34,359 @@ body {
     scrollbar-width: thin !important;
 }
 
+body {
+    font-family: $font-family-IranSans;
+    font-size: $font-size;
+    line-height: $line-height;
+    background:#F2F3F4;
+}
 
+.btn ,.btn:focus{
+    background: $primary-color;
+    color: #fff;
+    transition: .3s;
+    border-color: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn:hover{
+    background: #dddbf9;
+    color: $primary-color;
+    
+}
+.form-control:focus ,.form-check-input:focus {
+    background-color: #fff;
+    border-color: $second-color;
+    box-shadow: 0 0 0 0.1rem $second-color;
+}
+
+
+
+
+
+
+
+// header
+nav{
+    height: 7vh;
+    width: 100vw;
+    max-width: 100%;
+    .searchbtn,.searchbtn:focus,.searchbtn:hover{
+        background: none;
+        outline: none;
+        border: none;
+    }
+    .form-control{
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid #000;
+        font-size: .8rem;
+        &:focus{
+            border-color: $primary-color;
+            box-shadow: none;
+        }
+    }
+    .grow{
+        transition: all .2s ease-in-out; 
+        &:hover{
+            transform: scale(1.1); 
+        }
+    }
+    a{
+        color: $primary-color;
+        text-decoration: none;
+    }
+    .loginicon{
+        background: $primary-color;
+        padding: 4px 10px;
+        border-radius: 10px;
+        color: #fff;
+        margin-left: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+//footer
+footer{
+    width: 100vw;
+    max-width: 100%;
+    padding: 1.5rem 0 3rem;
+    background: #fff;
+    ul{
+        margin: 0;
+        padding: 0;
+        display: grid;
+        justify-content: center;
+        li{
+            list-style: none;
+        }
+    }
+    a{
+        color: $primary-color !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+// Index
+.sec1{
+    background: rgb(233, 233, 233);
+    height: 500px;
+    width: 100vw;
+    max-width: 100%;
+    .baner_txt{
+        width: fit-content;
+        line-height: 3rem;
+         a{
+            color: #5025d1;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 0px;
+            text-shadow: 2px 2px 3px #8c85ff;
+            transition: .5s ease-in;
+            &:hover{
+                letter-spacing: 1px;
+            }
+        }
+      
+    }
+}
+.sec2 {
+    .card{
+        width: 100%;
+        min-height: 370px;
+    }
+    p{
+        height: 3em;
+        overflow: hidden;
+        color: #464646;
+    }
+    img{
+        max-width: 100%;
+        height: 200px;
+    }
+}
+.category{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $primary-color;
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+}
+
+
+
+
+
+
+
+
+
+// form 
+form{
+    width: fit-content;
+    padding: 1rem;
+    .form-control{
+        min-width: 300px;
+    }
+    .form-check-input:checked {
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+    .form-check .form-check-input {
+        float: right;
+        margin-right: -1.5em;
+    }
+}
+
+.showpost{
+    .card-text{
+        text-align: justify;
+        line-height: 35px;
+    }
+    .rightside{
+        height: 70vh;
+    }
+    .tx{
+        color: $primary-color;
+        text-decoration: none;
+    }
+    .keywords{
+        color: #fff;
+        background: #8c85ff;
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+
+// auth
+.auth{
+    a{
+        color: $primary-color !important;
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+
+// userpanel
+.userpnl{
+    height: 80vh;
+    .card-img-top{
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .tabs{
+        height: 100%;
+        max-height: 100%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        .prof{
+            span{
+                width: 150px;
+                padding: 0 0.4rem;
+                font-size: 1rem;
+            }
+          
+        }
+  
+        table{
+            span{
+                font-size: 13px;
+             
+            }
+            .bg-success{
+                color: #fff !important;
+            }
+            .btn{
+              font-size: 12px;
+              &:hover{
+                color: #fff;
+              }
+            }
+        }
+        .btn{
+            max-height: 50px;
+        }
+      }
+      .frm{
+        background: #f6f6ff;
+        .hlp{
+            font-size: 10px;
+        }
+      }
+}
+
+
+
+//trix
+trix-toolbar .trix-button-group:not(:nth-child(2)):not(:nth-child(1)){
+        display: none;
+}
+
+
+
+    trix-editor{
+        background: #fff;
+        height: 20vh;
+        overflow: auto;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid #000;
+        font-size: .8rem;
+        &:focus{
+            border-color: $primary-color;
+            box-shadow: none;
+        }
+    }
+
+
+
+
+    .adminpnl{
+        height: 85vh;
+        .card-img-top{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+          .tabs{
+            height: 100%;
+            max-height: 100%;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            .prof{
+                span{
+                    width: 150px;
+                    padding: 0 0.4rem;
+                    font-size: 1rem;
+                }
+              
+            }
+      
+            table{
+                span{
+                    font-size: 13px;
+                 
+                }
+                .bg-success , .bg-danger{
+                    color: #fff !important;
+                }
+                .btn{
+                  font-size: 12px;
+                  &:hover{
+                    color: #fff;
+                  }
+                }
+            }
+            .btn{
+                max-height: 50px;
+            }
+          }
+          .frm{
+            background: #f6f6ff;
+            .hlp{
+                font-size: 10px;
+            }
+          }
+    }
+    
+    .toggletble{
+        background: #f5f4ff;
+    }
+
+    .card{
+        .card-body{
+            h5{
+                height: 2em;
+            }
+        }
+    }

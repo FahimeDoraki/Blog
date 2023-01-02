@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\layouts;
 
 use Livewire\Component;
 
@@ -8,6 +8,6 @@ class Footer extends Component
 {
     public function render()
     {
-        return view('livewire.footer');
+        return view('layouts.footer');
     }
 }
